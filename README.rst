@@ -1,8 +1,3 @@
-# piano-hero
-GuitarHero but for Piano
-
-# Developer Log
-
-## Initial release
-
-2024-06-23 - Initialized repository with .gitignore, unlicense and README.
+.. image:: https://readthedocs.org/projects/<repo_name>/badge/?version=latest
+   :target: https://<repo_name>.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
