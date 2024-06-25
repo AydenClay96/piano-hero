@@ -10,7 +10,8 @@ class App:
         self.clock = pygame.time.Clock()
         self.screen.fill("purple")
         self.running = True
-        self.player_pos = pygame.Vector2(self.screen.get_width() / 2, self.screen.get_height() / 2)
+        self.player_pos = pygame.Vector2(self.screen.get_width() / 2,
+                                         self.screen.get_height() / 2)
 
     def main(self) -> None:
         """Main game loop"""
