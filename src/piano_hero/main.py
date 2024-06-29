@@ -1,7 +1,7 @@
 import pygame
-from config import Parameters
-from scenes import game, main_menu, settings
-from utils import event_handler
+from config import Parameters  # type: ignore
+from scenes import game, main_menu, settings  # type: ignore
+from utils import event_handler  # type: ignore
 import logging
 logger = logging.getLogger(__name__)
 
@@ -57,25 +57,22 @@ class Main():
             out = self.event_handler.event()
             if out in ["up", "down", "left", "right"]:
                 # Keyboard input.
-                if out == "up":
-                    old_selection = self.selected
-                    self.selected -= 1
-                    if self.selected == 0:
-                        self.selected = len(self.scene.buttons) - 1
                 if out == "down":
                     old_selection = self.selected
                     self.selected += 1
                     if self.selected == len(self.scene.buttons):
                         self.selected = 1
+                elif out == "up":
+                    old_selection = self.selected
+                    self.selected -= 1
+                    if self.selected == 0:
+                        self.selected = len(self.scene.buttons) - 1
                 self.scene.buttons[self.selected].selected = True
                 self.scene.buttons[old_selection].selected = False
                 print(self.selected)
-            else:
-                # Mouse click.
-                pass
 
             for button in self.scene.buttons:
-                if pygame.mouse.get_visible:
+                if pygame.mouse.get_visible():  # type: ignore
                     mouse_pos = pygame.mouse.get_pos()
                     button.check_hover(mouse_pos)
                     button.change_color()
@@ -98,6 +95,7 @@ class Main():
 
         # Update the display.
         pygame.display.update()
+
 
 if __name__ == "__main__":
     main = Main()
