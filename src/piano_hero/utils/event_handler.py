@@ -1,6 +1,7 @@
 import pygame, sys
 
 
+
 class EventHandler:
     def __init__(self) -> None:
         pass
@@ -13,14 +14,21 @@ class EventHandler:
         pygame.mouse.set_visible(True)
 
     def on_click(self) -> None:
-        print("CLICKED.")
+        return pygame.mouse.get_pos()
 
     def on_key_press(self) -> None:
         pygame.mouse.set_visible(False)
         pressed = pygame.key.get_pressed()
         if pressed[pygame.K_ESCAPE]:
             self.quit()
-        print("KEY PRESSED.")
+        if pressed[pygame.K_w] or pressed[pygame.K_UP]:
+            return "up"
+        if pressed[pygame.K_s] or pressed[pygame.K_DOWN]:
+            return "down"
+        if pressed[pygame.K_a] or pressed[pygame.K_LEFT]:
+            return "left"
+        if pressed[pygame.K_d] or pressed[pygame.K_RIGHT]:
+            return "right"
     
     def on_midi_press(self) -> None:
         pygame.mouse.set_visible(False)
@@ -31,10 +39,10 @@ class EventHandler:
             if event.type == pygame.QUIT:
                 self.quit()
             if event.type == pygame.MOUSEBUTTONDOWN:
-                self.on_click()
+                return self.on_click()
             if event.type == pygame.KEYDOWN:
-                self.on_key_press()
+                return self.on_key_press()
             if event.type == pygame.MIDIIN:
-                self.on_midi_press()
+                return self.on_midi_press()
             if event.type == pygame.MOUSEMOTION:
                 self.on_mouse_move()

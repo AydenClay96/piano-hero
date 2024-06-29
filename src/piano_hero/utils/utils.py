@@ -1,5 +1,5 @@
 import pygame
-from pathlib import PurePath
+from pathlib import Path
 
 class Utils:
     """Utilities """
@@ -20,7 +20,4 @@ class Utils:
             pygame.font Font class.
             Use with <out>.render(text [str], anti-aliasing [bool], color [hex])
         """
-        assets_folder = self.settings.assets
-        font_tif = self.settings.font
-        font_path = PurePath(assets_folder, font_tif)
-        return pygame.font.Font(font_path, size)
+        return pygame.font.Font(self.settings.assets["font_path"], size)

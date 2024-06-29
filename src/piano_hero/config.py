@@ -15,7 +15,8 @@ class Parameters:
     scale: float = 1
 
     # Appearance
-    font_colour: str = "#d7fcd4"
+    title_colour: str = "#b68f40"
+    font_base_colour: str = "#d7fcd4"
     font_hover_colour: str = "White"
 
     def __post_init__(self):

@@ -51,22 +51,52 @@ class Main():
     def run(self) -> None:
         logger.info("Running...")
         self.scene = self.scenes["main_menu"]
+        self.selected = 1
 
         while True:
-            # Application
-            mouse_pos = pygame.mouse.get_pos()
+            out = self.event_handler.event()
+            if out in ["up", "down", "left", "right"]:
+                # Keyboard input.
+                if out == "up":
+                    old_selection = self.selected
+                    self.selected -= 1
+                    if self.selected == 0:
+                        self.selected = len(self.scene.buttons) - 1
+                if out == "down":
+                    old_selection = self.selected
+                    self.selected += 1
+                    if self.selected == len(self.scene.buttons):
+                        self.selected = 1
+                self.scene.buttons[self.selected].selected = True
+                self.scene.buttons[old_selection].selected = False
+                print(self.selected)
+            else:
+                # Mouse click.
+                pass
 
-            # Logic
-            self.event_handler.event()
+            for button in self.scene.buttons:
+                if pygame.mouse.get_visible:
+                    mouse_pos = pygame.mouse.get_pos()
+                    button.check_hover(mouse_pos)
+                    button.change_color()
 
             # View
             self.render()
     
     def render(self) -> None:
+        # Get current scene.
         scene = self.scene
+
+        # Clear screen and render background.
         self.screen.fill("black")
         if scene.background is not None:
             self.screen.blit(scene.background, (0, 0))
+
+        # Render objects.
+        for button in self.scene.buttons:
+            button.update(self.screen)
+
+        # Update the display.
         pygame.display.update()
 
 if __name__ == "__main__":
