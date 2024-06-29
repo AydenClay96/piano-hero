@@ -1,14 +1,15 @@
 [tool.poetry]
 name = "piano-hero"
 version = "0.1.0"
-description = ""
-authors = ["AydenClay96 <aydenclay1996@gmail.com>"]
+description = "GuitarHero but for Piano"
+authors = ["Ayden Clay"]
+license = "The Unlicense"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-mido = "^1.3.2"
 pygame = "^2.6.0"
+pathlib = "^1.0.1"
 
 
 [build-system]

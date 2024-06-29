@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+docs/Makefile
+docs/make.bat
+docs/source/conf.py
+docs/source/index.rst
+examples/example.py
+src/piano_hero/__init__.py
+src/piano_hero.egg-info/PKG-INFO
+src/piano_hero.egg-info/SOURCES.txt
+src/piano_hero.egg-info/dependency_links.txt
+src/piano_hero.egg-info/top_level.txt
+tests/__init__.py
