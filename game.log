@@ -100,3 +100,11 @@ INFO:__main__:Initializing scenes.
 INFO:__main__:Initializing event handler.
 INFO:__main__:Initialization complete.
 INFO:__main__:Running...
+INFO:__main__:Beginning initialization phase.
+INFO:__main__:Initializing pygame.
+INFO:__main__:Initializing configuration.
+INFO:__main__:Initializing screen.
+INFO:__main__:Initializing scenes.
+INFO:__main__:Initializing event handler.
+INFO:__main__:Initialization complete.
+INFO:__main__:Running...
