@@ -40,7 +40,8 @@ class Main():
     def init_scenes(self) -> None:
         logger.info("Initializing scenes.")
         self.scenes = {}
-        self.scenes["main_menu"] = main_menu.MainMenu(self.settings, self.screen)
+        self.scenes["main_menu"] = main_menu.MainMenu(self.settings,
+                                                      self.screen)
         self.scenes["settings"] = settings.Settings(self.settings, self.screen)
         self.scenes["game"] = game.Game(self.settings, self.screen)
 
@@ -79,7 +80,7 @@ class Main():
 
             # View
             self.render()
-    
+
     def render(self) -> None:
         # Get current scene.
         scene = self.scene

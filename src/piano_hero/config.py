@@ -32,8 +32,10 @@ class Parameters:
 
         # Background.
         background_path = "main_menu.jpg"
-        self.assets["background"] = pygame.image.load(PurePath(asset_path, background_path))
+        comb_path = PurePath(asset_path, background_path)
+        self.assets["background"] = pygame.image.load(comb_path)
 
         # Icon.
         icon_path = "logo_small.jpg"
-        self.assets["icon"] = pygame.image.load(PurePath(asset_path, icon_path))
+        comb_path = PurePath(asset_path, icon_path)
+        self.assets["icon"] = pygame.image.load(comb_path)
