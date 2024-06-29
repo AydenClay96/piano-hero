@@ -1,5 +1,5 @@
-import pygame, sys
-
+import pygame
+import sys
 
 
 class EventHandler:
@@ -29,7 +29,9 @@ class EventHandler:
             return "left"
         if pressed[pygame.K_d] or pressed[pygame.K_RIGHT]:
             return "right"
-    
+        if pressed[pygame.K_RETURN]:
+            return "enter"
+
     def on_midi_press(self) -> None:
         pygame.mouse.set_visible(False)
         print("NOTE PRESSED.")

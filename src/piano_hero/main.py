@@ -1,7 +1,9 @@
+import contextlib
 import pygame
 from config import Parameters  # type: ignore
 from scenes import game, main_menu, settings  # type: ignore
 from utils import event_handler  # type: ignore
+from objects import button
 import logging
 logger = logging.getLogger(__name__)
 
@@ -62,21 +64,36 @@ class Main():
                 if out == "down":
                     old_selection = self.selected
                     self.selected += 1
-                    if self.selected == len(self.scene.buttons):
+                    if self.selected == len(self.scene.objects):
                         self.selected = 1
                 elif out == "up":
                     old_selection = self.selected
                     self.selected -= 1
                     if self.selected == 0:
-                        self.selected = len(self.scene.buttons) - 1
-                self.scene.buttons[self.selected].selected = True
-                self.scene.buttons[old_selection].selected = False
+                        self.selected = len(self.scene.objects) - 1
+                self.scene.objects[self.selected].selected = True
+                self.scene.objects[old_selection].selected = False
+            if out == "enter":
+                if self.scene.name == "MAIN MENU":
+                    if self.selected == 3:
+                        self.event_handler.quit()
+                    for scene in self.scenes.keys():
+                        if self.scenes[scene].index == self.selected:
+                            self.scene = self.scenes[scene]
+                            break
+                elif self.scene.name == "OPTIONS":
+                    print("Options Page")
+                    self.scene = self.scenes["main_menu"]
+                elif self.scene.name == "PianoHero":
+                    print("Game Page")
+                    self.scene = self.scenes["main_menu"]
 
-            for button in self.scene.buttons:
-                if pygame.mouse.get_visible():  # type: ignore
-                    mouse_pos = pygame.mouse.get_pos()
-                    button.check_hover(mouse_pos)
-                button.change_color()
+            for object in self.scene.objects:
+                if isinstance(object, button.Button):
+                    if pygame.mouse.get_visible():  # type: ignore
+                        mouse_pos = pygame.mouse.get_pos()
+                        object.check_hover(mouse_pos)
+                    object.change_color()
 
             # View
             self.render()
@@ -88,11 +105,14 @@ class Main():
         # Clear screen and render background.
         self.screen.fill("black")
         if scene.background is not None:
-            self.screen.blit(scene.background, (0, 0))
+            screen_size = self.screen.get_size()
+            background = pygame.transform.scale(scene.background, screen_size)
+            self.screen.blit(background, (0, 0))
 
         # Render objects.
-        for button in self.scene.buttons:
-            button.update(self.screen)
+        with contextlib.suppress(AttributeError):
+            for object in self.scene.objects:
+                object.update(self.screen)
 
         # Update the display.
         pygame.display.update()
