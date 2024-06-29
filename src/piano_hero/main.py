@@ -1,7 +1,8 @@
 import contextlib
 import pygame
 from config import Parameters  # type: ignore
-from scenes import game, main_menu, settings  # type: ignore
+from piano_hero.scenes import config
+from scenes import game, main_menu  # type: ignore
 from utils import event_handler  # type: ignore
 from objects import button
 import logging
@@ -45,7 +46,7 @@ class Main():
         self.scenes = {}
         self.scenes["main_menu"] = main_menu.MainMenu(self.settings,
                                                       self.screen)
-        self.scenes["settings"] = settings.Settings(self.settings, self.screen)
+        self.scenes["settings"] = config.Settings(self.settings, self.screen)
         self.scenes["game"] = game.Game(self.settings, self.screen)
 
     def init_event_handler(self) -> None:
