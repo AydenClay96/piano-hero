@@ -1,0 +1,422 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pygame,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame.",
+        "description": "pygame.",
+        "detail": "pygame.",
+        "documentation": {}
+    },
+    {
+        "label": "pygame.midi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame.midi",
+        "description": "pygame.midi",
+        "detail": "pygame.midi",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "PurePath",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "PurePath",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Parameters",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "game",
+        "importPath": "scenes",
+        "description": "scenes",
+        "isExtraImport": true,
+        "detail": "scenes",
+        "documentation": {}
+    },
+    {
+        "label": "main_menu",
+        "importPath": "scenes",
+        "description": "scenes",
+        "isExtraImport": true,
+        "detail": "scenes",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "scenes",
+        "description": "scenes",
+        "isExtraImport": true,
+        "detail": "scenes",
+        "documentation": {}
+    },
+    {
+        "label": "event_handler",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "project = 'piano-hero'\ncopyright = '2024, Ayden Clay'\nauthor = 'Ayden Clay'\nrelease = '0.0.0'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = []\n# -- Options for HTML output -------------------------------------------------",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "copyright",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "copyright = '2024, Ayden Clay'\nauthor = 'Ayden Clay'\nrelease = '0.0.0'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = []\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "author",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "author = 'Ayden Clay'\nrelease = '0.0.0'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = []\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "release",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "release = '0.0.0'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = []\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "extensions",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "extensions = []\ntemplates_path = ['_templates']\nexclude_patterns = []\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "templates_path",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "templates_path = ['_templates']\nexclude_patterns = []\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "exclude_patterns",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "exclude_patterns = []\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_theme",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "html_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_static_path",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "html_static_path = ['_static']",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "Button",
+        "kind": 6,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "class Button():\n\tdef __init__(self, pos, text_input, font, base_color, hovering_color, padding: Optional[int] = 10, alpha: Optional[int] = 10):\n\t\tself.x_pos = pos[0]\n\t\tself.y_pos = pos[1]\n\t\tself.font = font\n\t\tself.base_color, self.hovering_color = base_color, hovering_color\n\t\tself.text_input = text_input\n\t\tself.text = self.font.render(self.text_input, True, self.base_color)\n\t\tself.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))\n\t\tself.padding = padding",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.x_pos",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.x_pos = pos[0]\n\t\tself.y_pos = pos[1]\n\t\tself.font = font\n\t\tself.base_color, self.hovering_color = base_color, hovering_color\n\t\tself.text_input = text_input\n\t\tself.text = self.font.render(self.text_input, True, self.base_color)\n\t\tself.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))\n\t\tself.padding = padding\n\t\tself.alpha = alpha\n\tdef update(self, screen):",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.y_pos",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.y_pos = pos[1]\n\t\tself.font = font\n\t\tself.base_color, self.hovering_color = base_color, hovering_color\n\t\tself.text_input = text_input\n\t\tself.text = self.font.render(self.text_input, True, self.base_color)\n\t\tself.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))\n\t\tself.padding = padding\n\t\tself.alpha = alpha\n\tdef update(self, screen):\n\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.font",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.font = font\n\t\tself.base_color, self.hovering_color = base_color, hovering_color\n\t\tself.text_input = text_input\n\t\tself.text = self.font.render(self.text_input, True, self.base_color)\n\t\tself.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))\n\t\tself.padding = padding\n\t\tself.alpha = alpha\n\tdef update(self, screen):\n\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))\n\t\ts.set_alpha(self.alpha)",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.text_input",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.text_input = text_input\n\t\tself.text = self.font.render(self.text_input, True, self.base_color)\n\t\tself.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))\n\t\tself.padding = padding\n\t\tself.alpha = alpha\n\tdef update(self, screen):\n\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))\n\t\ts.set_alpha(self.alpha)\n\t\ts.fill((0, 0, 0))\n\t\tscreen.blit(s, (self.rect[0] - self.padding / 2, self.rect[1] - self.padding / 2))",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.text",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.text = self.font.render(self.text_input, True, self.base_color)\n\t\tself.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))\n\t\tself.padding = padding\n\t\tself.alpha = alpha\n\tdef update(self, screen):\n\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))\n\t\ts.set_alpha(self.alpha)\n\t\ts.fill((0, 0, 0))\n\t\tscreen.blit(s, (self.rect[0] - self.padding / 2, self.rect[1] - self.padding / 2))\n\t\tscreen.blit(self.text, self.rect)",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.rect",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))\n\t\tself.padding = padding\n\t\tself.alpha = alpha\n\tdef update(self, screen):\n\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))\n\t\ts.set_alpha(self.alpha)\n\t\ts.fill((0, 0, 0))\n\t\tscreen.blit(s, (self.rect[0] - self.padding / 2, self.rect[1] - self.padding / 2))\n\t\tscreen.blit(self.text, self.rect)\n\tdef checkForInput(self, position):",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.padding",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.padding = padding\n\t\tself.alpha = alpha\n\tdef update(self, screen):\n\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))\n\t\ts.set_alpha(self.alpha)\n\t\ts.fill((0, 0, 0))\n\t\tscreen.blit(s, (self.rect[0] - self.padding / 2, self.rect[1] - self.padding / 2))\n\t\tscreen.blit(self.text, self.rect)\n\tdef checkForInput(self, position):\n\t\tif position[0] in range(self.rect.left, self.rect.right) and position[1] in range(self.rect.top, self.rect.bottom):",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.alpha",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\tself.alpha = alpha\n\tdef update(self, screen):\n\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))\n\t\ts.set_alpha(self.alpha)\n\t\ts.fill((0, 0, 0))\n\t\tscreen.blit(s, (self.rect[0] - self.padding / 2, self.rect[1] - self.padding / 2))\n\t\tscreen.blit(self.text, self.rect)\n\tdef checkForInput(self, position):\n\t\tif position[0] in range(self.rect.left, self.rect.right) and position[1] in range(self.rect.top, self.rect.bottom):\n\t\t\treturn True",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ts",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\ts = pygame.Surface(size=(self.rect.right - self.rect.left + self.padding, self.rect.bottom - self.rect.top + self.padding))\n\t\ts.set_alpha(self.alpha)\n\t\ts.fill((0, 0, 0))\n\t\tscreen.blit(s, (self.rect[0] - self.padding / 2, self.rect[1] - self.padding / 2))\n\t\tscreen.blit(self.text, self.rect)\n\tdef checkForInput(self, position):\n\t\tif position[0] in range(self.rect.left, self.rect.right) and position[1] in range(self.rect.top, self.rect.bottom):\n\t\t\treturn True\n\t\treturn False\n\tdef changeColor(self, position):",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tself.text",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\t\tself.text = self.font.render(self.text_input, True, self.hovering_color)\n\t\telse:\n\t\t\tself.text = self.font.render(self.text_input, True, self.base_color)",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tself.text",
+        "kind": 5,
+        "importPath": "src.piano_hero.objects.button",
+        "description": "src.piano_hero.objects.button",
+        "peekOfCode": "\t\t\tself.text = self.font.render(self.text_input, True, self.base_color)",
+        "detail": "src.piano_hero.objects.button",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "kind": 6,
+        "importPath": "src.piano_hero.scenes.game",
+        "description": "src.piano_hero.scenes.game",
+        "peekOfCode": "class Game:\n    \"\"\"Game class that initializes and runs the core game processes.\"\"\"\n    def __init__(self, settings, screen) -> None:\n        self.settings = settings\n        self.screen = screen\n        self.background = None",
+        "detail": "src.piano_hero.scenes.game",
+        "documentation": {}
+    },
+    {
+        "label": "MainMenu",
+        "kind": 6,
+        "importPath": "src.piano_hero.scenes.main_menu",
+        "description": "src.piano_hero.scenes.main_menu",
+        "peekOfCode": "class MainMenu:\n    def __init__(self, settings, screen) -> None:\n        self.settings = settings\n        self.screen = screen\n        self.background = self.settings.assets[\"background\"]\n    def main_menu(self) -> None:\n        \"\"\"Main menu of the pygame.\"\"\"\n        print(\"MAIN MENU\")\n    #     pygame.display.set_caption(self.name)\n    #     pygame.display.set_icon(self.icon)",
+        "detail": "src.piano_hero.scenes.main_menu",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "src.piano_hero.scenes.settings",
+        "description": "src.piano_hero.scenes.settings",
+        "peekOfCode": "class Settings:\n    \"\"\"Options screen of the pygame.\"\"\"\n    def __init__(self, settings, screen) -> None:\n        self.settings = settings\n        self.screen = screen\n        self.background = None\n    # while True:\n    #     self.screen.fill(\"Black\")\n    #     menu_mouse_pos = pygame.mouse.get_pos()\n    #     options_button = Button(pos=(640,100), text_input = \"OPTIONS\", font=self.get_font(75),",
+        "detail": "src.piano_hero.scenes.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EventHandler",
+        "kind": 6,
+        "importPath": "src.piano_hero.utils.event_handler",
+        "description": "src.piano_hero.utils.event_handler",
+        "peekOfCode": "class EventHandler:\n    def __init__(self) -> None:\n        pass\n    def quit(self) -> None:\n        pygame.quit()\n        sys.exit()\n    def on_mouse_move(self) -> None:\n        pygame.mouse.set_visible(True)\n    def on_click(self) -> None:\n        print(\"CLICKED.\")",
+        "detail": "src.piano_hero.utils.event_handler",
+        "documentation": {}
+    },
+    {
+        "label": "MidiController",
+        "kind": 6,
+        "importPath": "src.piano_hero.utils.midi_control",
+        "description": "src.piano_hero.utils.midi_control",
+        "peekOfCode": "class MidiController:\n    def __init__(self) -> None:\n        pygame.midi.init()\n        (in_device_id, out_device_id) = self.find_controller()\n        self.midi_in = pygame.midi.Input(in_device_id)\n        print(\"Using input id: %s.\" % in_device_id)\n    def find_controller(self) -> None:\n        in_id = None\n        out_id = None\n        for i in range(pygame.midi.get_count()):",
+        "detail": "src.piano_hero.utils.midi_control",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "src.piano_hero.utils.save",
+        "description": "src.piano_hero.utils.save",
+        "peekOfCode": "class Settings:\n    \"\"\"General config file with defaults for the game.\"\"\"\n    user: str = \"default\"\n    scale: str = \"C\"\n    issharp: bool = False\n    isminor: bool = False\n    tempo: int = 60\n    midi: bool = False\n    ledger_lines: int = 0\nclass Config():",
+        "detail": "src.piano_hero.utils.save",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "src.piano_hero.utils.save",
+        "description": "src.piano_hero.utils.save",
+        "peekOfCode": "class Config():\n    \"\"\"Class for saving the provided data.\"\"\"\n    def __init__(self):\n        self.settings = Settings()\n    def save(self) -> None:\n        question_button = Button(pos=(640, 300), text_input = \"SAVE CHANGES?\", font=self.get_font(75),\n                                base_color=\"#b68f40\", hovering_color=\"b68f40\")\n        yes_button = Button(pos=(500, 400), text_input = \"YES\", font=self.get_font(40),\n                                base_color=\"#b68f40\", hovering_color=\"White\")\n        no_button = Button(pos=(780, 400), text_input = \"NO\", font=self.get_font(40),",
+        "detail": "src.piano_hero.utils.save",
+        "documentation": {}
+    },
+    {
+        "label": "Utils",
+        "kind": 6,
+        "importPath": "src.piano_hero.utils.utils",
+        "description": "src.piano_hero.utils.utils",
+        "peekOfCode": "class Utils:\n    \"\"\"Utilities \"\"\"\n    def __init__(self, settings: dict) -> None:\n        self.settings = settings\n    def get_font(self, size: int) -> pygame.font.Font:\n        \"\"\"Ensures the font is rendered in the required size.\n        Parameters\n        ----------\n        size : int\n            integer indicator of size in pixels.",
+        "detail": "src.piano_hero.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Parameters",
+        "kind": 6,
+        "importPath": "src.piano_hero.config",
+        "description": "src.piano_hero.config",
+        "peekOfCode": "class Parameters:\n    # Game Parameters\n    name = \"PianoHero\"\n    # Screen Parameters\n    full_screen: bool = False\n    resolution: tuple = (1280, 720)\n    # Interface Parameters\n    scale: float = 1\n    # Appearance\n    font_colour: str = \"#d7fcd4\"",
+        "detail": "src.piano_hero.config",
+        "documentation": {}
+    },
+    {
+        "label": "Main",
+        "kind": 6,
+        "importPath": "src.piano_hero.main",
+        "description": "src.piano_hero.main",
+        "peekOfCode": "class Main():\n    \"\"\"Main class for the piano-hero game.\"\"\"\n    def __init__(self) -> None:\n        logging.basicConfig(filename=\"game.log\", level=logging.INFO)\n        logger.info(\"Beginning initialization phase.\")\n        self.init_game()\n        self.init_settings()\n        self.init_screen()\n        self.init_scenes()\n        self.init_event_handler()",
+        "detail": "src.piano_hero.main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "src.piano_hero.main",
+        "description": "src.piano_hero.main",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass Main():\n    \"\"\"Main class for the piano-hero game.\"\"\"\n    def __init__(self) -> None:\n        logging.basicConfig(filename=\"game.log\", level=logging.INFO)\n        logger.info(\"Beginning initialization phase.\")\n        self.init_game()\n        self.init_settings()\n        self.init_screen()\n        self.init_scenes()",
+        "detail": "src.piano_hero.main",
+        "documentation": {}
+    }
+]
