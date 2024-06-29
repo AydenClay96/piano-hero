@@ -1,32 +1,23 @@
 import pygame
 from typing import Optional
-from config import Parameters  # type: ignore
+from objects.object import Object  # type: ignore
 
 
-class Button():
+class Button(Object):
     def __init__(self,
-                 settings: Parameters,
-                 index: int,
-                 pos: tuple[float, float],
                  text_input: str,
                  font: pygame.font.Font,
                  padding: Optional[int] = 10,
-                 alpha: Optional[int] = 10,
-                 selectable: Optional[bool] = True):
-        self.x_pos = pos[0]
-        self.y_pos = pos[1]
-        self.index = index
-        self.selected = False
+                 alpha: Optional[int] = 10):
         self.font = font
-        self.settings = settings
         self.color = self.settings.font_base_colour
         self.text_input = text_input
         self.text = self.font.render(
             self.text_input, True, self.color)  # type: ignore
-        self.rect = self.text.get_rect(center=(self.x_pos, self.y_pos))
+        self.rect = self.text.get_rect(
+            center=self.position)
         self.padding = padding
         self.alpha = alpha
-        self.selectable = selectable
 
     def update(self, screen: pygame.Surface) -> None:
         horizontal = self.rect.right - self.rect.left
