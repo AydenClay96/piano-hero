@@ -1,5 +1,6 @@
-import pygame
 from typing import Optional
+
+import pygame
 from objects.object import Object  # type: ignore
 
 

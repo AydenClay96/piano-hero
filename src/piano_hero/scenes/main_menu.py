@@ -1,7 +1,7 @@
-from objects import button  # type: ignore
-from config import Parameters  # type: ignore
-from utils.utils import Utils  # type: ignore
 import pygame
+from config import Parameters  # type: ignore
+from objects import button  # type: ignore
+from utils.utils import Utils  # type: ignore
 
 
 class MainMenu:
@@ -30,16 +30,15 @@ class MainMenu:
             )
         ]
 
-        self.objects.append(button.Button(settings=self.settings, index=1,
+        self.objects.append(button.Button(settings=self.settings,
                                           pos=(x / 2, 3 * y / 9),
                                           text_input="PLAY",
-                                          font=self.utils.get_font(o_f_s),
-                                          selectable=False))
-        self.objects.append(button.Button(settings=self.settings, index=2,
+                                          font=self.utils.get_font(o_f_s)))
+        self.objects.append(button.Button(settings=self.settings,
                                           pos=(x / 2, 5 * y / 9),
                                           text_input="OPTIONS",
                                           font=self.utils.get_font(o_f_s)))
-        self.objects.append(button.Button(settings=self.settings, index=3,
+        self.objects.append(button.Button(settings=self.settings,
                                           pos=(x / 2, 7 * y / 9),
                                           text_input="QUIT",
                                           font=self.utils.get_font(o_f_s)))

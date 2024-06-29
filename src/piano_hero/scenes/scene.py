@@ -1,6 +1,6 @@
+import pygame
 from config import Parameters
 from utils.utils import Utils
-import pygame
 
 
 class Scene():
@@ -15,10 +15,14 @@ class Scene():
         self.utils = Utils(settings)
         self.background = background
         self.objects = []
+        self.selected = None
 
     def initialize(self, screen: pygame.Surface) -> None:
         """Initializes the class."""
         self.screen = screen
+        return NotImplementedError("Subclass must define this.")
+
+    def event(self, events: list[str]) -> None:
         return NotImplementedError("Subclass must define this.")
 
     def update(self, screen: pygame.Surface) -> None:
