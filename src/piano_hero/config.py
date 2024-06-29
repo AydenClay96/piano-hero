@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from pathlib import Path, PurePath
 import pygame
 
+
 @dataclass
 class Parameters:
     # Game Parameters
@@ -19,7 +20,7 @@ class Parameters:
     font_base_colour: str = "#d7fcd4"
     font_hover_colour: str = "White"
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         # Assets
         # Asset path.
         self.assets = {}

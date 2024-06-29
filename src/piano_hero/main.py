@@ -8,6 +8,7 @@ logger = logging.getLogger(__name__)
 
 class Main():
     """Main class for the piano-hero game."""
+
     def __init__(self) -> None:
         logging.basicConfig(filename="game.log", level=logging.INFO)
         logger.info("Beginning initialization phase.")
@@ -70,13 +71,12 @@ class Main():
                         self.selected = len(self.scene.buttons) - 1
                 self.scene.buttons[self.selected].selected = True
                 self.scene.buttons[old_selection].selected = False
-                print(self.selected)
 
             for button in self.scene.buttons:
                 if pygame.mouse.get_visible():  # type: ignore
                     mouse_pos = pygame.mouse.get_pos()
                     button.check_hover(mouse_pos)
-                    button.change_color()
+                button.change_color()
 
             # View
             self.render()
