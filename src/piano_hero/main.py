@@ -5,9 +5,9 @@ import pygame
 from config import Parameters  # type: ignore
 from objects import button
 from scenes import game, main_menu  # type: ignore
-from piano_hero.utils import event_handler  # type: ignore
+from utils import event_handler  # type: ignore
 
-from piano_hero.scenes import config
+from scenes import config
 
 logger = logging.getLogger(__name__)
 

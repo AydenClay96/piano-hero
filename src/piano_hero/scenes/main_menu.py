@@ -1,20 +1,16 @@
 import pygame
-from config import Parameters  # type: ignore
+from scenes.scene import Scene  # type: ignore
 from objects import button  # type: ignore
-from utils.utils import Utils  # type: ignore
 
 
-class MainMenu:
-    def __init__(self, settings: Parameters, screen: pygame.Surface) -> None:
+class MainMenu(Scene):
+    def __init__(self, screen: pygame.Surface) -> None:
         self.index = 0
         self.name = "MAIN MENU"
-        self.settings = settings
         self.screen = screen
-        self.background = self.settings.assets["background"]
-        self.utils = Utils(self.settings)
-        self.main_menu()
+        self.initialize()
 
-    def main_menu(self) -> None:
+    def initialize(self) -> None:
         """Main menu of the pygame."""
         x, y = self.screen.get_size()
         t_f_s = int((x + y) / 20)
@@ -42,3 +38,11 @@ class MainMenu:
                                           pos=(x / 2, 7 * y / 9),
                                           text_input="QUIT",
                                           font=self.utils.get_font(o_f_s)))
+
+    def event(self, events: list[str]) -> None:
+        print("Event triggered!")
+        return 0
+
+    def update(self, screen: pygame.Surface) -> None:
+        print("Updating main menu.")
+        return 0

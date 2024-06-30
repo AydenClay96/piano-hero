@@ -1,22 +1,19 @@
 import pygame
-from config import Parameters  # type: ignore
 from objects import button  # type: ignore
-from utils.utils import Utils  # type: ignore
+from scenes.scene import Scene  # type: ignore
 
 
-class Settings:
+class Settings(Scene):
     """Options screen of the pygame."""
 
-    def __init__(self, settings: Parameters, screen: pygame.Surface) -> None:
+    def __init__(self, screen: pygame.Surface) -> None:
         self.index = 2
         self.name = "OPTIONS"
-        self.settings = settings
         self.screen = screen
         self.background = None
-        self.utils = Utils(settings)
-        self.configure()
+        self.make()
 
-    def configure(self) -> None:
+    def make(self) -> None:
         x, y = self.screen.get_size()
         t_f_s = int((x + y) / 20)
         o_f_s = int(t_f_s * 0.8)
