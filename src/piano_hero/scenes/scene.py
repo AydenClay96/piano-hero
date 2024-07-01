@@ -8,24 +8,23 @@ class Scene():
 
     def __init__(self,
                  name: str,
-                 background: pygame.Surface,
-                 settings: Parameters) -> None:
+                 index: int,
+                 settings: Parameters,
+                 background: pygame.Surface = None) -> None:
         self.name = name
+        self.index = index
         self.settings = settings
         self.utils = Utils(settings)
         self.background = background
         self.objects = []
-        self.selected = None
 
-    def initialize(self, screen: pygame.Surface) -> None:
+    def initialize(self) -> None:
         """Initializes the class."""
-        self.screen = screen
         return NotImplementedError("Subclass must define this.")
 
-    def event(self, events: list[str]) -> None:
+    def event(self) -> None:
         return NotImplementedError("Subclass must define this.")
 
-    def update(self, screen: pygame.Surface) -> None:
+    def update(self) -> None:
         """Update the  class"""
-        self.screen = screen
         return NotImplementedError("Subclass must define this.")

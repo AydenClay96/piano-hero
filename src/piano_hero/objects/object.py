@@ -12,5 +12,8 @@ class Object():
         self.settings = settings
         self.position = position
 
+    def initialize(self) -> None:
+        return NotImplementedError("Subclass must define this.")
+
     def update(self, screen: pygame.Surface) -> None:
         return NotImplementedError("Subclass must define this.")
